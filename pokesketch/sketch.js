@@ -11,7 +11,6 @@ var step;
 function setup(){
   frameRate(15);
   canvas = createCanvas(320,320);
- canvas.parent('sketchold');
 
   for(var i = 0; i < 4; i++){
     img[i]=[];
@@ -30,7 +29,7 @@ function setup(){
   img [3][2] = loadImage("l2.png");
 
   map = loadImage("pokemap.png")
-  background(255);
+  background(255,0,0);
   x=16;
   y=16;
   tic = 0;
