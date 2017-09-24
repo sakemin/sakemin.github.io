@@ -11,6 +11,7 @@ var step;
 function setup(){
   frameRate(15);
   canvas = createCanvas(320,320);
+ canvas.parent('sketchold');
 
   for(var i = 0; i < 4; i++){
     img[i]=[];
