@@ -96,26 +96,3 @@ function draw(){
   }
   image(img[persp][tic%3],x,y);
 }
-
-
-function mouseDragged(){
-  var mx = mouseX-pmouseX;
-  var my = mouseY-pmouseY;
-
-  if(mx>0 && abs(mx) >= abs(my){
-      step=8;
-      persp = 1;
-  }
-  else if(mx<0 && abs(mx)>=abs(my)){
-    step=8;
-    persp = 3;
-  }
-  else if(my>0 && abs(my)>abs(mx)){
-      step=8;
-      persp = 2;
-  }
-  else{
-    step=8;
-    persp = 0;
-  }
-}
