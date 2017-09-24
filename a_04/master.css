@@ -3,8 +3,8 @@
 }
 body{
   background-color: #FFFFAA;
-
 }
+
 ul{
   padding: 0;
 }
@@ -40,8 +40,8 @@ img#pokelogo {
 }
 
 img#screenshot{
-  padding: 10% 0 0 25%;
-  width:50%;
+  padding: 0 0 0 25%;
+  width:40%;
 }
 
 div{
@@ -55,14 +55,17 @@ div#inner{
   float:left;
 }
 
+div#sketchold{
+  width:320px;
+  height:320px;
+}
+
 article#mainbox{
   font-size: 2em;
-  padding: 1.5em;
 }
 
 article#subbox{
-  font-size: 1em;
-  padding: 1.5em;
+  font-size: 0.8em;
 }
 
 footer{
