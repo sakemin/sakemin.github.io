@@ -56,6 +56,7 @@ div#inner{
 }
 
 div#sketchold{
+  padding: 0 0 0 25%;
   width:320px;
   height:320px;
 }
