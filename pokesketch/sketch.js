@@ -72,7 +72,7 @@ function draw(){
         y-=2;
           if(y<16){y=16;}
           else if(x==144&&y<80&&y>64){y=80;}
-          else if(x>=144&&x<=208&&y<=128){y=128;}
+          else if(x>144&&x<=208&&y<=128){y=128;}
         break;
       case 1:
         x+=2;
@@ -84,7 +84,7 @@ function draw(){
         y+=2;
         if(y>288){y=288;}
         else if(x==144&&y>48&&y<64){y=48;}
-        else if(x>=144&&x<=208&&y>=144){y=144;}
+        else if(x>144&&x<=208&&y>=144){y=144;}
         break;
       case 3:
         x-=2;
