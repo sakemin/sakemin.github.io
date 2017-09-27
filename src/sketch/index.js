@@ -1,5 +1,3 @@
-var canvas;
-
 var x,y;
 var map;
 
@@ -8,28 +6,27 @@ var tic;
 var persp;
 var step;
 
-function setup(){
+export function setup(){
   frameRate(15);
-  canvas = createCanvas(320,320);
- canvas.parent('sketchold');
+  createCanvas(320,320);
 
   for(var i = 0; i < 4; i++){
     img[i]=[];
   }
-  img [0][0] = loadImage("ui.png");
-  img [0][1] = loadImage("u1.png");
-  img [0][2] = loadImage("u2.png");
-  img [1][0] = loadImage("ri.png");
-  img [1][1] = loadImage("r1.png");
-  img [1][2] = loadImage("r2.png");
-  img [2][0] = loadImage("di.png");
-  img [2][1] = loadImage("d1.png");
-  img [2][2] = loadImage("d2.png");
-  img [3][0] = loadImage("li.png");
-  img [3][1] = loadImage("l1.png");
-  img [3][2] = loadImage("l2.png");
+  img [0][0] = loadImage("assets/ui.png");
+  img [0][1] = loadImage("assets/u1.png");
+  img [0][2] = loadImage("assets/u2.png");
+  img [1][0] = loadImage("assets/ri.png");
+  img [1][1] = loadImage("assets/r1.png");
+  img [1][2] = loadImage("assets/r2.png");
+  img [2][0] = loadImage("assets/di.png");
+  img [2][1] = loadImage("assets/d1.png");
+  img [2][2] = loadImage("assets/d2.png");
+  img [3][0] = loadImage("assets/li.png");
+  img [3][1] = loadImage("assets/l1.png");
+  img [3][2] = loadImage("assets/l2.png");
 
-  map = loadImage("pokemap.png")
+  map = loadImage("assets/pokemap.png")
   background(255,0,0);
   x=16;
   y=16;
@@ -38,7 +35,7 @@ function setup(){
   step = 0;
 }
 
-function draw(){
+export function draw(){
   image(map,0,0);
 
   if(keyIsPressed == true && step == 0){
