@@ -30,7 +30,6 @@ function setup(){
   img [3][2] = loadImage("l2.png");
 
   map = loadImage("pokemap.png")
-  background(255,0,0);
   x=16;
   y=16;
   tic = 0;
