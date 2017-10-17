@@ -164,3 +164,13 @@ nav.abs-nav-under{
   width:30em;
   margin: 1.5em;
 }
+
+a{
+  color:black;
+}
+
+#video{
+  display: block;
+  width:68em;
+  height:38.25em;
+}
