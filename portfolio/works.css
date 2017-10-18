@@ -130,7 +130,7 @@ nav.abs-nav-under {
 .text {
   color: black;
   font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
+  font-size: 1em;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -275,7 +275,7 @@ a{
   .text {
     color: black;
     font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -421,7 +421,7 @@ a{
   .text {
     color: black;
     font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     position: absolute;
     top: 50%;

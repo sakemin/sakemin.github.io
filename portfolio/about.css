@@ -94,6 +94,7 @@ nav.abs-nav-under {
   margin: auto;
   background-color: rgba(255, 255, 255, 0.4);
   text-align: left;
+  line-height: 1.5em;
 }
 #profile {
   width: 30vw;
@@ -203,7 +204,7 @@ a{
     text-align: left;
   }
   #profile {
-    width: 30vw;
+    width: 20vw;
     margin: 1.5vw;
   }
   #profile-info {
