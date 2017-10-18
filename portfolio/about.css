@@ -1,76 +1,65 @@
+/* for Mobile*/
 body {
   background-color: #555555;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-
+  font-size: 0.6em;
 }
-
-h1{
+h1 {
   font-family: 'Ubuntu', sans-serif;
 }
-
-h1:lang(ko){
+h1:lang(ko) {
   font-family: "Jeju Gothic", sans-serif;
 }
-
-h2{
+h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 1.4em;
 }
-
 ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
 }
-
-li.tab{
-    display:inline-block;
-    padding:1em;
+li.tab {
+  display: inline-block;
+  padding: 1em;
 }
-
 li.tab a {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: black;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
   padding: 1em;
   text-decoration: none;
 }
-
-#about{
+#about {
   text-decoration: underline;
 }
-
-ul{
+ul {
   text-align: center;
 }
-
-#mainlogo{
+#mainlogo {
   display: block;
   height: 40vh;
   margin: auto;
   z-index: -2;
 }
-
-#tomain{
+#tomain {
   z-index: -2;
 }
-
-#logo{
+#logo {
+  display:none;
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   padding: 1.8em 2em;
   height: 2.2em;
 }
-
-.tab:hover{
+.tab:hover {
   text-decoration: none;
 }
-
 nav.abs-nav {
   position: fixed;
   left: 0px;
@@ -80,41 +69,250 @@ nav.abs-nav {
   background-color: white;
   z-index: 1;
 }
-
-nav.abs-nav-under{
-  position:fixed;
+nav.abs-nav-under {
+  position: fixed;
   left: 0px;
   width: 100%;
   height: 0.5em;
   top: 6em;
   background-color: black;
 }
-
-.icon{
-  width:3em;
-  padding:0.5em;
+.icon {
+  width: 3em;
+  padding: 0.5em;
   z-index: -2;
 }
-
-#iconbar{
-  position: absolute;
-  right: 1em;
-  top: 1em;
+#iconbar {
+  display: none;
 }
-
-#topblank{
+#topblank {
   height: 7em;
 }
-
-.page-wrapper{
-  width:68em;
+.page-wrapper {
+  width: 95vw;
+  margin-top: 1em;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 1em;
   text-align: left;
 }
+#profile {
+  width: 30vw;
+  margin: 1.5vw;
+}
+#profile-info {
+  padding: 1em;
+}
+a{
+  color: black;
+}
+@media screen and (min-width:415px) {
+  /* for Tablet*/
+  body {
+    background-color: #555555;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  h1:lang(ko) {
+    font-family: "Jeju Gothic", sans-serif;
+  }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 1.4em;
+  }
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  li.tab {
+    display: inline-block;
+    padding: 1em;
+  }
+  li.tab a {
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+  #about {
+    text-decoration: underline;
+  }
+  ul {
+    text-align: center;
+  }
+  #mainlogo {
+    display: block;
+    height: 40vh;
+    margin: auto;
+    z-index: -2;
+  }
+  #tomain {
+    z-index: -2;
+  }
+  #logo {
+    display:block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1.8em 2em;
+    height: 2.2em;
+  }
+  .tab:hover {
+    text-decoration: none;
+  }
+  nav.abs-nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 6em;
+    background-color: white;
+    z-index: 1;
+  }
+  nav.abs-nav-under {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 0.5em;
+    top: 6em;
+    background-color: black;
+  }
+  .icon {
+    width: 3em;
+    padding: 0.5em;
+    z-index: -2;
+  }
+  #iconbar {
+    display: none;
+  }
+  #topblank {
+    height: 7em;
+  }
+  .page-wrapper {
+    width: 95vw;
+    margin-top: 1em;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: left;
+  }
+  #profile {
+    width: 30vw;
+    margin: 1.5vw;
+  }
+  #profile-info {
+    padding: 1em;
+  }
+}
 
-#profile{
-  width:30em;
-  margin: 1.5em;
+@media screen and (min-width:1025px) {
+  /* for PC*/
+  body {
+    background-color: #555555;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  h1 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  h1:lang(ko) {
+    font-family: "Jeju Gothic", sans-serif;
+  }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 1.4em;
+  }
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  li.tab {
+    display: inline-block;
+    padding: 1em;
+  }
+  li.tab a {
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+  #about {
+    text-decoration: underline;
+  }
+  ul {
+    text-align: center;
+  }
+  #mainlogo {
+    display: block;
+    height: 40vh;
+    margin: auto;
+    z-index: -2;
+  }
+  #tomain {
+    z-index: -2;
+  }
+  #logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1.8em 2em;
+    height: 2.2em;
+  }
+  .tab:hover {
+    text-decoration: none;
+  }
+  nav.abs-nav {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 6em;
+    background-color: white;
+    z-index: 1;
+  }
+  nav.abs-nav-under {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 0.5em;
+    top: 6em;
+    background-color: black;
+  }
+  .icon {
+    width: 3em;
+    padding: 0.5em;
+    z-index: -2;
+  }
+  #iconbar {
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+  #topblank {
+    height: 7em;
+  }
+  .page-wrapper {
+    width: 68em;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 1em;
+    padding: 1em;
+    text-align: left;
+  }
+  #profile {
+    width: 30em;
+    margin: 1.5em;
+  }
 }

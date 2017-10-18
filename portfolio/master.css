@@ -1,48 +1,55 @@
+/*for Mobile*/
+
 body {
   background-color: #555555;
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  font-size: 0.6em;
 }
 
 ul {
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  height: 100px;
 }
 
-li.tab{
-    display:inline-block;
-    padding:1em;
+li.tab {
+  display: inline-block;
+  padding: 1em;
 }
 
 li.tab a {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: black;
   font-family: 'Ubuntu', sans-serif;
   text-align: center;
-  padding: 1em;
+  padding: 16px;
   text-decoration: none;
 }
 
-ul{
+ul {
   text-align: center;
 }
 
-#mainlogo{
+#mainlogo {
   display: block;
-  height: 40vh;
+  height: 40vmin;
   margin: auto;
   z-index: -2;
 }
 
-#logo{
+#logo {
   display: block;
   height: 10em;
   margin: auto;
   z-index: -2;
 }
+
 nav.abs-nav {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -52,8 +59,8 @@ nav.abs-nav {
   z-index: 1;
 }
 
-nav.abs-nav-under{
-  position:fixed;
+nav.abs-nav-under {
+  position: fixed;
   left: 0px;
   width: 100%;
   height: 0.5em;
@@ -61,22 +68,194 @@ nav.abs-nav-under{
   background-color: black;
 }
 
-.icon{
-  width:3em;
-  padding:0.5em;
+.icon {
+  width: 3em;
+  padding: 0.5em;
   z-index: -2;
 }
 
-#iconbar{
-  position: absolute;
-  right: 1em;
-  top: 1em;
+#iconbar {
+  display: none;
 }
 
-.maincenter{
+.maincenter {
+  display: flex;
+  flex-direction: column;
   font-size: 2em;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
 }
 
-#topblank{
-  height:80vh;
+#topblank {
+  height: 80vh;
+}
+
+a{
+  color: black;
+}
+
+@media screen and (min-width:415px) {
+  /*for Tablet*/
+  body {
+    background-color: #555555;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+  }
+  li.tab {
+    display: inline-block;
+    padding: 1em;
+  }
+  li.tab a {
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  ul {
+    text-align: center;
+  }
+  #mainlogo {
+    display: block;
+    height: 40vmin;
+    margin: auto;
+    z-index: -2;
+  }
+  #logo {
+    display: block;
+    height: 10em;
+    margin: auto;
+    z-index: -2;
+  }
+  nav.abs-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    z-index: 1;
+  }
+  nav.abs-nav-under {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 0.5em;
+    top: 80%;
+    background-color: black;
+  }
+  .icon {
+    width: 3em;
+    padding: 0.5em;
+    z-index: -2;
+  }
+  #iconbar {
+    display: none;
+  }
+  .maincenter {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  #topblank {
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width:1025px) {
+  /* for PC*/
+  body {
+    background-color: #555555;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+  }
+  li.tab {
+    display: inline-block;
+    padding: 1em;
+  }
+  li.tab a {
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  ul {
+    text-align: center;
+  }
+  #mainlogo {
+    display: block;
+    height: 40vmin;
+    margin: auto;
+    z-index: -2;
+  }
+  #logo {
+    display: block;
+    height: 10em;
+    margin: auto;
+    z-index: -2;
+  }
+  nav.abs-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    z-index: 1;
+  }
+  nav.abs-nav-under {
+    position: fixed;
+    left: 0px;
+    width: 100%;
+    height: 0.5em;
+    top: 80%;
+    background-color: black;
+  }
+  .icon {
+    width: 3em;
+    padding: 0.5em;
+    z-index: -2;
+  }
+  #iconbar {
+    display: block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+  .maincenter {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  #topblank {
+    height: 80vh;
+  }
 }
