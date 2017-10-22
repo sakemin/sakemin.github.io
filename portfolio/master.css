@@ -91,6 +91,10 @@ nav.abs-nav-under {
   height: 80vh;
 }
 
+#topokemon{
+  text-decoration: none;
+}
+
 a{
   color: black;
 }

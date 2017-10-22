@@ -312,6 +312,10 @@ a{
     padding: 1em;
     text-align: left;
   }
+  #about-text{
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
   #profile {
     width: 30em;
     margin: 1.5em;
