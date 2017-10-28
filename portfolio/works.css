@@ -110,7 +110,7 @@ nav.abs-nav-under {
   height: 24.1875vw;
 }
 .work-thumbnail a {
-  z-index: -2;
+  z-index: 0;
 }
 .work-thumbnail:hover .overlay {
   opacity: 1;
