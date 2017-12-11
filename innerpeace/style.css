@@ -9,6 +9,10 @@ body{
 background: black;
 }
 
+#p5_loading{
+color:white;  
+}
+
 .container{
   position: absolute;
   width: 100vw;
