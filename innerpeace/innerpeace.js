@@ -20,6 +20,9 @@ var mobiusX = [];
 var mobiusY = [];
 
 function preload(){
+  textAlign(CENTER);
+  fontSize(100);
+  text("Inner Peace",width/2,height/2);
   soundFormats('wav');
   mySound = loadSound('assets/final_innerpeace.wav');
 }
