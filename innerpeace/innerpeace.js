@@ -10,7 +10,7 @@ var mindtic=0;
 var sec=60;
 var word;
 var isSpeaking=false;
-var mode=0; //0:idle, 1:mindintro, 2:mindselect, 3:depressment, 4:business, 5:loneliness, 6:rage
+var mode=0; //0:idle, 1:mindintro, 2:mindselect, 3:depressment, 4:business, 5:helplessness, 6:rage
 // variable holding our particle system
 var ps = null;
 
@@ -235,6 +235,110 @@ function updateWords()
     toggleWords("#w3-31",186,190);
     toggleWords("#w3-32",192,196);
     if(tic==196*sec){
+      tic=22*sec;
+      mode=0;
+    }
+  }
+
+  if(mode==4){//business
+    toggleWords("#w4-1",1,5);
+    toggleWords("#w4-2",7,11);
+    toggleWords("#w4-3",13,17);
+    toggleWords("#w4-4",19,23);
+    toggleWords("#w4-5",25,29);
+    toggleWords("#w4-6",30,34);
+    toggleWords("#w4-7",38,42);
+    toggleWords("#w4-8",44,48);
+    toggleWords("#w4-9",50,54);
+    toggleWords("#w4-10",56,60);
+    toggleWords("#w4-11",62,66);
+    toggleWords("#w4-12",68,72);
+    toggleWords("#w4-13",74,78);
+    toggleWords("#w4-14",80,84);
+    toggleWords("#w4-15",86,90);
+    toggleWords("#w4-16",92,96);
+    toggleWords("#w4-17",100,104);
+    toggleWords("#w4-18",108,112);
+    toggleWords("#w4-19",114,118);
+    toggleWords("#w4-20",122,126);
+    toggleWords("#w4-21",128,132);
+    toggleWords("#w4-22",136,140);
+    toggleWords("#w4-23",142,146);
+    toggleWords("#w4-24",148,152);
+    toggleWords("#w4-25",156,160);
+    toggleWords("#w4-26",162,166);
+    toggleWords("#w4-27",168,172);
+    toggleWords("#w4-28",176,180);
+    toggleWords("#w4-29",182,186);
+    toggleWords("#w4-30",190,194);
+    toggleWords("#w4-31",198,202);
+    toggleWords("#w4-32",204,208);
+    toggleWords("#w4-33",210,214);
+    if(tic==214*sec){
+      tic=22*sec;
+      mode=0;
+    }
+  }
+
+  if(mode==5){//helplessness
+    toggleWords("#w5-1",1,5);
+    toggleWords("#w5-2",7,11);
+    toggleWords("#w5-3",13,17);
+    toggleWords("#w5-4",19,23);
+    toggleWords("#w5-5",25,29);
+    toggleWords("#w5-6",30,34);
+    toggleWords("#w5-7",36,40);
+    toggleWords("#w5-8",44,48);
+    toggleWords("#w5-9",50,55);
+    toggleWords("#w5-10",57,61);
+    toggleWords("#w5-11",65,70);
+    toggleWords("#w5-12",74,78);
+    toggleWords("#w5-13",80,84);
+    toggleWords("#w5-14",86,90);
+    toggleWords("#w5-15",92,96);
+    toggleWords("#w5-16",98,102);
+    toggleWords("#w5-17",104,108);
+    toggleWords("#w5-18",110,114);
+    toggleWords("#w5-19",117,122);
+    toggleWords("#w5-20",124,128);
+    toggleWords("#w5-21",130,134);
+    toggleWords("#w5-22",138,142);
+    toggleWords("#w5-23",144,148);
+    toggleWords("#w5-24",150,155);
+    if(tic==155*sec){
+      tic=22*sec;
+      mode=0;
+    }
+  }
+
+  if(mode==6){//rage
+    toggleWords("#w6-1",1,5);
+    toggleWords("#w6-2",7,11);
+    toggleWords("#w6-3",13,17);
+    toggleWords("#w6-4",19,23);
+    toggleWords("#w6-5",25,29);
+    toggleWords("#w6-6",31,35);
+    toggleWords("#w6-7",37,41);
+    toggleWords("#w6-8",43,47);
+    toggleWords("#w6-9",49,53);
+    toggleWords("#w6-10",55,59);
+    toggleWords("#w6-11",61,65);
+    toggleWords("#w6-12",67,71);
+    toggleWords("#w6-13",73,77);
+    toggleWords("#w6-14",79,83);
+    toggleWords("#w6-15",87,91);
+    toggleWords("#w6-16",93,97);
+    toggleWords("#w6-17",101,105);
+    toggleWords("#w6-18",109,113);
+    toggleWords("#w6-19",115,119);
+    toggleWords("#w6-20",121,125);
+    toggleWords("#w6-21",127,131);
+    toggleWords("#w6-22",136,140);
+    toggleWords("#w6-23",142,146);
+    toggleWords("#w6-24",148,152);
+    toggleWords("#w6-25",154,158);
+    toggleWords("#w6-26",160,164);
+    if(tic==164*sec){
       tic=22*sec;
       mode=0;
     }
