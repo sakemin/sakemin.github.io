@@ -1,0 +1,218 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="smoke.js"></script>
+  <script language="javascript" type="text/javascript" src="innerpeace.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="words" id="w0-1">
+      안녕! 반가워!
+    </div>
+    <div class="words" id="w0-2">
+      여긴 마음의 쉼터야.
+    </div>
+    <div class="words" id="w0-3">
+      편히 쉬다 가렴.
+    </div>
+    <div class="words" id="w0-4">
+      마음을 되돌아 보고 싶으면 날 클릭하렴!
+    </div>
+    <div class="words" id="wr-1">
+      노래 들을만 하니?
+    </div>
+    <div class="words" id="wr-2">
+      차 한잔이라도 주고 싶은데 그러지 못해 아쉽다.
+    </div>
+    <div class="words" id="wr-3">
+      오늘 하루 수고 많았어.
+    </div>
+    <div class="words" id="wr-4">
+      하루 하루 조금이라도 나은 사람이 되면 좋은거지.
+    </div>
+    <div class="words" id="wr-5">
+      넌 그 존재 자체만으로도 멋진 사람이야.
+    </div>
+    <div class="words" id="wr-6">
+      모든 건 지나간단다.
+    </div>
+    <div class="words" id="wr-7">
+      넌 너로서 최고야.
+    </div>
+    <div class="words" id="wr-8">
+      삶이 답답할 때에는 하늘을 올려다 보렴.
+    </div>
+    <div class="words" id="wr-9">
+      힘내자 우리!
+    </div>
+    <div class="words" id="wr-10">
+      너 자신을 믿으렴.
+    </div>
+    <div class="words" id="wr-11">
+      괜찮아.
+    </div>
+    <div class="words" id="wr-12">
+      너가 어떤 삶을 살든, 난 널 응원할게.
+    </div>\
+    <div class="words" id="wr-13">
+      마음을 되돌아 보고 싶으면 언제든지 날 클릭해!
+    </div>
+    <div class="words" id="w1-1">
+      마음을 한번 되돌아볼까?
+    </div>
+    <div class="words" id="w1-2">
+      마음에 집중해보기 전에 일단 호흡을 가다듬어 보자.
+    </div>
+    <div class="words" id="w1-3">
+      내가 노란색일 때 숨을 들이쉬고, 초록색일 때 내쉬는거야.
+    </div>
+    <div class="words" id="w1-4">
+      자 천천히 호흡해봐.
+    </div>
+    <div class="words" id="w1-5">
+      들이쉴 땐 코로, 내쉴 땐 입으로!
+    </div>
+    <div class="words" id="w1-6">
+      들숨, 날숨의 느낌에 집중해봐!
+    </div>
+    <div class="words" id="w1-7">
+      공기의 흐름을 느끼는거야.
+    </div>
+    <div class="words" id="w1-8">
+      들숨의 차가움과 날숨의 따뜻함을.
+    </div>
+    <div class="words" id="w1-9">
+      그럼 이제 마음을 되돌아보자.
+    </div>
+    <div class="words" id="w2-1">
+      지금 기분이 어떠니?
+    </div>
+    <div class="feelings" id="w2-2" onclick="feelChoose(3)">
+      우울
+    </div>
+    <div class="feelings" id="w2-3" onclick="feelChoose(4)">
+      분주함
+    </div>
+    <div class="feelings" id="w2-4" onclick="feelChoose(5)">
+      외로움
+    </div>
+    <div class="feelings" id="w2-5" onclick="feelChoose(6)">
+      분노
+    </div>
+    <div class="words" id="w3-1">
+      우울함은 보통 몸에도 함께 나타나는 것 같아.
+    </div>
+    <div class="words" id="w3-2">
+      네 몸은 우울함을 어떻게 느끼니?
+    </div>
+    <div class="words" id="w3-3">
+      평소보다 몸이 무겁고, 식욕이 없고 잠도 잘 안 오지 않니?
+    </div>
+    <div class="words" id="w3-4">
+      그 몸을 느껴보는 거야.
+    </div>
+    <div class="words" id="w3-5">
+      지금 내가 왜 우울한지에 대한 이유나,
+    </div>
+    <div class="words" id="w3-6">
+      우울하면 안되는데 라는 생각은 잠시 접어두고,
+    </div>
+    <div class="words" id="w3-7">
+      그냥 우울함을 있는 그대로 느껴보자
+    </div>
+    <div class="words" id="w3-8">
+      ‘지금 우울한 나 자신이 싫어, 벗어나고 싶어.’ ‘나는 왜이러지’하는 자책이 들 수도 있어.
+    </div>
+    <div class="words" id="w3-9">
+      그럼 다시 호흡에 집중해보는거야.
+    </div>
+    <div class="words" id="w3-10">
+      숨을 들이마쉬고, 내쉬고.
+    </div>
+    <div class="words" id="w3-11">
+      들숨, 날숨
+    </div>
+
+    <div class="words" id="w3-12">
+      우울이라는 감정은 늪과 같아.
+    </div>
+    <div class="words" id="w3-13">
+      우울에서 빠져나오려고 몸부림칠수록 더 빠져들 수 있어.
+    </div>
+    <div class="words" id="w3-14">
+      우울도 하나의 감정이니 그냥 있는 그대로 받아들여보자.
+    </div>
+    <div class="words" id="w3-15">
+      용기를 내서 우울을 마주보는거야.
+    </div>
+
+    <div class="words" id="w3-16">
+      그냥 우울한 것 뿐이야.
+    </div>
+    <div class="words" id="w3-17">
+      우울 할 수 있지.
+    </div>
+    <div class="words" id="w3-18">
+      힘든 하루였지?
+    </div>
+    <div class="words" id="w3-19">
+      외롭기도 했고.
+    </div>
+
+    <div class="words" id="w3-20">
+      아무리 대단한 사람이라도 우울할 수 있어.
+    </div>
+    <div class="words" id="w3-21">
+      하나의 감정일 뿐이니까.
+    </div>
+    <div class="words" id="w3-22">
+      마음의 소리를 들어보는 거야.
+    </div>
+    <div class="words" id="w3-23">
+      힘든 마음에게 귀를 기울여보자.
+    </div>
+
+    <div class="words" id="w3-24">
+      모든 감정은 왔다가 사라진단다.
+    </div>
+    <div class="words" id="w3-25">
+      그리고 다시 찾아올 수도 있지.
+    </div>
+    <div class="words" id="w3-26">
+      마치 들숨과 날숨이 반복되는 것 처럼.
+    </div>
+    <div class="words" id="w3-27">
+      감정이 찾아왔다 사라지고, 다시 찾아오는거야.
+    </div>
+
+    <div class="words" id="w3-28">
+      우울한 마음을 감싸 안아주는 상상을 해보자.
+    </div>
+    <div class="words" id="w3-29">
+      위로해주자. 우울한 우리 마음을.
+    </div>
+    <div class="words" id="w3-30">
+      응원해주자. 힘든 우리 자신을.
+    </div>
+    <div class="words" id="w3-31">
+      나도 널 응원할게.
+    </div>
+    <div class="words" id="w3-32">
+      눈을 감고 힘든 우리 마음을 한번만 더 안아주자.
+    </div>
+  </div>
+</body>
+
+</html>
