@@ -68,7 +68,7 @@ function infinity(){
   background(0);
   translate(width/2,2*height/5);
   if(isSpeaking){
-    translate(randomGaussian(0,1),randomGaussian(0,1)*0.5);
+    translate(randomGaussian(0,1)*0.5,randomGaussian(0,1)*0.5);
     beginShape();
     for(var theta=0; theta<390; theta+=10){
       var r = 1 + cos(2*radians(theta));
