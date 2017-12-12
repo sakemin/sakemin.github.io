@@ -48,9 +48,10 @@ function windowResized() {
 
 function infinity(){
   var spectrum = fft.analyze();
+  var highMid = fft.getEnergy("highMid");
   spectralCentroid = fft.getCentroid();
-  console.log(spectralCentroid);
-  col = map(spectralCentroid,750,900,0,180);
+  console.log(highMid);
+  col = map(highMid,0,1,0,180);
   if(col>180){col=180;}
   var bassbeat = fft.getEnergy("bass");
   var dotSize = map(bassbeat,100,250,3,15);
