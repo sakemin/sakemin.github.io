@@ -39,6 +39,7 @@ function draw() {
   updateWords();
   infinity();
   tic++;
+
 }
 
 function windowResized() {
@@ -48,6 +49,7 @@ function windowResized() {
 function infinity(){
   var spectrum = fft.analyze();
   spectralCentroid = fft.getCentroid();
+  console.log(spectralCentroid);
   col = map(spectralCentroid,750,900,0,180);
   if(col>180){col=180;}
   var bassbeat = fft.getEnergy("bass");
