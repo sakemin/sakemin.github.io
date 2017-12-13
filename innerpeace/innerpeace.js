@@ -53,7 +53,7 @@ function infinity(){
   col = map(highMid,0,1,0,180);
   if(col>180){col=180;}
   var bassbeat = fft.getEnergy("bass");
-  var dotSize = map(bassbeat,100,250,3,15);
+  var dotSize = map(bassbeat,100,250,3,10);
   /*if((globalTheta>=80 && globalTheta <85)||(globalTheta>=95 && globalTheta <100)||(globalTheta>=260 && globalTheta <265)||(globalTheta>=275 && globalTheta <280)){
     globalTheta +=2*increasement;
   }
@@ -114,9 +114,15 @@ function infinity(){
     strokeWeight(dotSize);
     stroke(col,180,0);
      point(localDotX,localDotY);
+
+     var dotdotSize = dotSize*0.7;
+     strokeWeight(dotdotSize);
     localDotX = 0.9*localDotX;
     localDotY = 0.9*localDotY;
      point(localDotX,localDotY);
+
+     var dotdotdotSize = dotSize*1.3;
+     strokeWeight(dotdotdotSize);
     localDotX = (10/9)*1.1*localDotX;
     localDotY = (10/9)*1.1*localDotY;
      point(localDotX,localDotY);
