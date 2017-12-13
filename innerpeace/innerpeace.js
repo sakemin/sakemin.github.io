@@ -20,8 +20,8 @@ var mobiusX = [];
 var mobiusY = [];
 
 function preload(){
-  soundFormats('wav');
-  mySound = loadSound('assets/final_innerpeace.wav');
+  soundFormats('mp3');
+  mySound = loadSound('assets/final_innerpeace.mp3');
 }
 function setup() {
   frameRate(60);
