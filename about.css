@@ -13,7 +13,7 @@ h1:lang(ko) {
 }
 h2 {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
+  font-weight: 600;
   font-size: 1.4em;
 }
 ul {
@@ -317,7 +317,7 @@ a{
     line-height: 1.5em;
   }
   #profile {
-    width: 30em;
-    margin: 1.5em;
+    width: 25em;
+    margin: 1em;
   }
 }
