@@ -115,6 +115,9 @@ nav.abs-nav-under {
 .work-thumbnail:hover .overlay, .work-thumbnail .overlay:hover {
   opacity: 1;
 }
+.work-thumbnail:active .overlay, .work-thumbnail .overlay:active {
+  opacity: 1;
+}
 
 .overlay {
   position: absolute;
