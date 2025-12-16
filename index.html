@@ -1,70 +1,286 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>sakemin</title>
-  <link rel="stylesheet" href="master.css">
-  <link rel="icon" href="favicon.png" sizes="96x96">
-  <script src="sketch.js"></script><!--not used yet, for in case of using it-->
-  <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"><!--responsive-->
-  <meta property="og:description"content="사케사케사케민">
-  <meta property="og:image"content="sakemin_logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jongmin Jung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍶</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <nav class="abs-nav"><!--navigation bar, always top(fixed)-->
-      <br />
-
-
-      <div class="maincenter">
-        <ul class="tab-wrapper" style="font-size: 0.5em;"><!--3 tabs in it-->
-          <li class="tab">
-            <a href="about.html" target="_self" id="about">
-            about
-            </a>
-          </li>
-          <li class="tab">
-            <a href="works.html" target="_self" id="works">
-            works
-            </a>
-          </li>
-          <li class="tab">
-            <a href="contact.html" target="_self" id="contact">
-            contact
-            </a>
-          </li>
-          <div id="iconbar" style="top: 2em;"><!--4 icons to sns-->
-            <a href="https://www.linkedin.com/in/sake-min/" target="_blank"><img src="linkedin.png" alt="linkedin.png" id="linkedin.png" class="icon"/></a>
-            <a href="https://www.instagram.com/sake_min/" target="_blank"><img src="instagram.png" alt="instagram" id="instagram" class="icon"/></a>
-            <a href="https://soundcloud.com/sakemin" target="_blank"><img src="soundcloud.png" alt="soundcloud" id="soundcloud" class="icon"/></a>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Jongmin Jung</h1>
+                <h1><i>sakemin</i></h1>
+                <div class="subtitle">
+                    <span>Music & Audio AI Researcher / Media Technologist</span>
+                    <nav class="contact-links">
+                        <a href="mailto:sakemin.jung@gmail.com" class="email-text">sakemin.jung@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/sake-min/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/sakemin" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=m5-ZZGcAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="cv.pdf" target="_blank" title="Download CV"><i class="fas fa-file-lines"></i></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="profile-image-container">
+                <img src="profile_red.png" alt="Jongmin Jung" class="profile-image">
           </div>
-        </ul>
-        <p>
-          This is the page <a href="https://sakemin.github.io/pokesketch" target="_blank" id="topokemon">o</a>f <!--if you click 'o', it opens pokemon html-->
-        </p>
-        <img src="sakemin_logo_alpha.png" alt="logo" id="mainlogo"/><!--main logo sakemin-->
-        <p>
-          (sakemin)
-        </p>
+        </header>
+
+        <section id="about">
+            <div class="section-title">About</div>
+            <div class="section-content">
+                <p>
+                    I solve problems in a witty manner.
+                </p>
+                <p>
+                    My research focuses on developing Generative Music Intelligence, structured around three interconnected research directions: <b>inter-modal understanding</b>, <b>controllable generation</b>, and <b>disentangled music representation</b>.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience">
+          <div class="section-title">Experience</div>
+          <div class="section-content">
+              <div class="item">
+                  <div class="item-main">
+                      <span class="item-title">Music AI Researcher</span>
+                      <span class="item-subtitle"><a href="https://neutune.com/" target="_blank">Neutune</a></span>
+                  </div>
+                  <span class="item-date">2025</span>
+              </div>
+              <div class="item">
+                  <div class="item-main">
+                      <span class="item-title">Machine Learning Researcher</span>
+                      <span class="item-subtitle"><a href="https://replicate.com/" target="_blank">Replicate</a></span>
+                  </div>
+                  <span class="item-date">2023 - 2024</span>
+              </div>
+          </div>
+      </section>
+      <section id="publications">
+          <div class="section-title">Publications</div>
+          <div class="section-content">
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title"><a href="https://arxiv.org/abs/2505.12863" target="_blank">U-MusT: Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio</a></span>
+                    <span class="item-authors"><b>Jongmin Jung</b>, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon Soh, Irmak Bukey, Chris Donahue, Dasaem Jeong</span>
+                    <span class="item-subtitle">IEEE Transactions on Audio, Speech, and Language Processing (TASLP)</span>
+                    <div class="item-links">
+                        <a href="https://sakem.in/u-must/" target="_blank" class="link-btn">Demo</a>
+                    </div>
+                </div>
+                  <span class="item-date">2025</span>
+              </div>
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title"><a href="https://arxiv.org/abs/2510.20276" target="_blank">From Generation to Attribution: Music AI Agent Architectures for the Post-Streaming Era</a></span>
+                    <span class="item-authors">Wonil Kim, Hyeongseok Wi, Seungsoon Park, Taejun Kim, Sangeun Keum, Keunhyoung Kim, Taewan Kim, <b>Jongmin Jung</b>, Taehyoung Kim, Gaetan Guerrero, Mael Le Goff, Julie Po, Dongjoo Moon, Juhan Nam, Jongpil Lee</span>
+                    <span class="item-subtitle">NeurIPS Workshop on AI for Music</span>
+                    <div class="item-links">
+                        <a href="https://aimusicagent.github.io/" target="_blank" class="link-btn">Demo</a>
+                    </div>
+                </div>
+                  <span class="item-date">2025</span>
+              </div>
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title"><a href="https://arxiv.org/abs/2505.10101" target="_blank">LAV: Audio-Driven Dynamic Visual Generation with Neural Compression and StyleGAN2</a></span>
+                    <span class="item-authors"><b>Jongmin Jung</b>, Dasaem Jeong</span>
+                    <span class="item-subtitle">The 30th International Symposium on Electronic/Emerging Art (ISEA)</span>
+                    <div class="item-links">
+                        <a href="https://youtu.be/Ag7jrmCl59o?si=Bvgw6XsDgq-WNUMz" target="_blank" class="link-btn">Demo</a>
+                    </div>
+                </div>
+                  <span class="item-date">2025</span>
+              </div>
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title"><a href="https://arxiv.org/abs/2412.00325" target="_blank">MusicGen-Chord: Advancing Music Generation through Chord Progressions and Interactive Web-UI</a></span>
+                    <span class="item-authors"><b>Jongmin Jung</b>, Andreas Jansson, Dasaem Jeong</span>
+                    <span class="item-subtitle">Late-breaking/Demo at the International Society of Music Information Retrieval Conference (ISMIR)</span>
+                    <div class="item-links">
+                        <a href="https://youtu.be/w3e6IpEjqZU" target="_blank" class="link-btn">Demo</a>
+                    </div>
+                </div>
+                  <span class="item-date">2024</span>
+              </div>
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title"><a href="https://arxiv.org/abs/2408.01180" target="_blank">Nested Music Transformer: Sequentially Decoding Compound Tokens in Symbolic Music and Audio Generation</a></span>
+                    <span class="item-authors">Jiwoo Ryu, Hao-Wen Dong, <b>Jongmin Jung</b>, Dasaem Jeong</span>
+                    <span class="item-subtitle">The International Society of Music Information Retrieval Conference (ISMIR)</span>
+                </div>
+                  <span class="item-date">2024</span>
+              </div>
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title"><a href="https://arxiv.org/abs/2309.11093" target="_blank">K-pop Lyric Translation: Dataset, Analysis, and Neural-Modelling</a></span>
+                    <span class="item-authors">Haven Kim, <b>Jongmin Jung</b>, Dasaem Jeong, Juhan Nam</span>
+                    <span class="item-subtitle">The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-Coling)</span>
+                </div>
+                  <span class="item-date">2024</span>
+              </div>
+          </div>
+      </section>
+      <section id="education">
+          <div class="section-title">Education</div>
+            <div class="section-content">
+                <div class="item">
+                    <div class="item-main">
+                        <span class="item-title">M.S. in Artificial Intelligence</span>
+                        <span class="item-subtitle"><a href="https://malerlab.github.io/" target="_blank">MALer Lab</a>, Sogang University</span>
+                    </div>
+                    <span class="item-date">2023 - 2025</span>
+                </div>
+                <div class="item">
+                    <div class="item-main">
+                        <span class="item-title">B.A. & Sc. in Art & Technology</span>
+                        <span class="item-subtitle">Sogang University</span>
+                    </div>
+                    <span class="item-date">2016 - 2022</span>
+                </div>
+            </div>
+        </section>
+        <section id="involvement">
+          <div class="section-title">Involvement</div>
+          <div class="section-content">
+              <div class="item">
+                <div class="item-main">
+                    <span class="item-title">ICLR 2026</span>
+                    <span class="item-subtitle">Reviewer</span>
+                </div>
+                <span class="item-date">2025</span>
+              </div>
+              <div class="item">
+                  <div class="item-main">
+                      <span class="item-title">ISMIR 2025</span>
+                      <span class="item-subtitle">Social Media Chair, Organizing Committee</span>
+                  </div>
+                  <span class="item-date">2025</span>
+              </div>
+              <div class="item">
+                  <div class="item-main">
+                      <span class="item-title">ICML 2025</span>
+                      <span class="item-subtitle">Reviewer</span>
+                  </div>
+                  <span class="item-date">2025</span>
+              </div>
+          </div>
+      </section>
+      <section id="works">
+            <div class="section-title">Works</div>
+            <div class="section-content">
+                <div class="works-grid">
+                    <div class="work-item" data-title="LAV:MG" data-year="2024" data-desc="Generative Audio Visual Composition" data-detail="LAV / MaxMSP with RAVE.</br>StyleGAN2 model trained by <a href='https://krrrl.blogspot.com/' target='_blank'>Krrrl</a>." data-media-type="youtube" data-media-src="https://www.youtube.com/embed/Ag7jrmCl59o?si=sw6eoQsvVtev1D4-">
+                        <img src="works/LAV-fig.png" alt="LAV:MG">
+                        <span class="work-title">LAV:MG</span>
+                        <span class="work-year">2024</span>
+                    </div>
+                    <div class="work-item" data-title="noisegram" data-year="2022" data-desc="Image Sonification" data-detail="Turning visual noise into soundscapes." data-media-type="youtube" data-media-src="https://www.youtube.com/embed/H_boU4WRlzw">
+                        <img src="works/noise_thumbnail.jpg" alt="noisegram">
+                        <span class="work-title">noisegram</span>
+                        <span class="work-year">2022</span>
+                    </div>
+                    <div class="work-item" data-title="Mind Generator" data-year="2021" data-desc="Generative Audio Visual Composition" data-detail="MaxMSP / StyleGAN2" data-media-type="youtube" data-media-src="https://www.youtube.com/embed/vHTQ4oLiduk">
+                        <img src="works/mindgenerator_thumbnail.jpg" alt="Mind Generator">
+                        <span class="work-title">Mind Generator</span>
+                        <span class="work-year">2021</span>
+                    </div>
+                </div>
+            </div>
+        </section>
       </div>
 
-
-    </nav>
-
-    <nav class="abs-nav-under">   </nav><!--black line-->
-  <div class="page-wrapper"><!--grey, page wrapping-->
-    <div id="topblank"> <!--blank beneath the nav layer-->
-
+      <footer>
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Jongmin Jung. All rights reserved.</p>
+      </footer>
+  </div>
+  
+  <div id="work-modal" class="modal">
+      <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+              <div class="modal-media">
+                  <!-- Media content will be injected here -->
+              </div>
+              <div class="modal-info">
+                  <h2 id="modal-title">Work Title</h2>
+                  <span id="modal-year" class="modal-year">Year</span>
+                  <p id="modal-desc" class="modal-description">Description goes here.</p>
+                  <p id="modal-detail" class="modal-detail">Detail description goes here.</p>
+              </div>
     </div>
-    <div id="mainfooter"><!--footer-->
-      <br/>
-      <br/>
-      Jongmin <a href="index.html">'sakemin'</a> Jung<br/><br/>
-      Art &amp; Technology at Sogang Univ.<br/><br/>
-      ⓒ <script>document.write(new Date().getFullYear())</script>. sakemin all rights reserved.
     </div>
   </div>
+
+  <script src="bg.js"></script>
+  <script>
+      // Simple Modal Logic
+      const modal = document.getElementById("work-modal");
+      const closeBtn = document.querySelector(".close-btn");
+      const workItems = document.querySelectorAll(".work-item");
+      const modalMedia = document.querySelector(".modal-media");
+      const modalTitle = document.getElementById("modal-title");
+      const modalYear = document.getElementById("modal-year");
+      const modalDesc = document.getElementById("modal-desc");
+      const modalDetail = document.getElementById("modal-detail");
+
+      workItems.forEach(item => {
+          item.addEventListener('click', (e) => {
+              e.preventDefault();
+              const title = item.dataset.title;
+              const year = item.dataset.year;
+              const desc = item.dataset.desc;
+              const detail = item.dataset.detail;
+              const type = item.dataset.mediaType;
+              const src = item.dataset.mediaSrc;
+
+              modalTitle.textContent = title;
+              modalYear.textContent = year;
+              modalDesc.textContent = desc;
+              modalDetail.innerHTML = detail; // Changed from textContent to innerHTML to support links
+
+              modalMedia.innerHTML = '';
+              if (type === 'image') {
+                  const img = document.createElement('img');
+                  img.src = src;
+                  modalMedia.appendChild(img);
+              } else if (type === 'video') {
+                  const video = document.createElement('video');
+                  video.src = src;
+                  video.controls = true;
+                  modalMedia.appendChild(video);
+              } else if (type === 'youtube') {
+                  const iframe = document.createElement('iframe');
+                  iframe.src = src;
+                  iframe.frameBorder = "0";
+                  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                  iframe.allowFullscreen = true;
+                  modalMedia.appendChild(iframe);
+              }
+
+              modal.style.display = "block";
+              document.body.style.overflow = "hidden"; // Prevent background scrolling
+          });
+      });
+
+      closeBtn.onclick = function() {
+          modal.style.display = "none";
+          document.body.style.overflow = "auto";
+          modalMedia.innerHTML = ''; // Clear media
+      }
+
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+              document.body.style.overflow = "auto";
+              modalMedia.innerHTML = '';
+          }
+      }
+  </script>
 </body>
 </html>
