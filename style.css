@@ -299,7 +299,7 @@ p {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(255, 255, 255, 0.95); /* White background with slight opacity */
+    background-color: rgba(0, 0, 0, 0.85); /* Darker background with opacity */
     backdrop-filter: blur(5px);
 }
 
@@ -312,10 +312,11 @@ p {
     max-width: 1000px;
     position: relative;
     animation: fadeIn 0.3s;
+    color: #fff; /* Light text for dark mode */
 }
 
 .close-btn {
-    color: #aaa;
+    color: #ddd; /* Light close button */
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -329,41 +330,21 @@ p {
 
 .close-btn:hover,
 .close-btn:focus {
-    color: var(--link-color);
+    color: #fff;
     text-decoration: none;
-}
-
-.modal-body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-    margin-top: 20px;
-}
-
-.modal-media {
-    width: 100%;
-}
-
-.modal-media img,
-.modal-media video,
-.modal-media iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    border-radius: 4px;
 }
 
 .modal-info h2 {
     font-size: 2rem;
     margin-bottom: 10px;
     line-height: 1.2;
+    color: #fff; /* White title */
 }
 
 .modal-year {
     font-family: 'Inter', monospace;
     font-size: 1rem;
-    color: #666;
+    color: #ccc; /* Light grey year */
     margin-bottom: 20px;
     display: block;
 }
@@ -371,25 +352,25 @@ p {
 .modal-description {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #333;
+    color: #eee; /* Light grey description */
     margin-bottom: 20px;
 }
 
 .modal-detail {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #666;
+    color: #bbb; /* Slightly darker grey detail */
 }
 
 .modal-detail a {
-    color: var(--link-color);
+    color: #ff6b6b; /* Lighter red for dark background */
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.2s ease;
 }
 
 .modal-detail a:hover {
-    border-bottom: 1px solid var(--link-color);
+    border-bottom: 1px solid #ff6b6b;
 }
 
 @keyframes fadeIn {
